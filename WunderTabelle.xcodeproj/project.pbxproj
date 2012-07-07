@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2513E5F15A8D8940081BB42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2513E5E15A8D8940081BB42 /* UIKit.framework */; };
+		A2513E6115A8D8940081BB42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2513E6015A8D8940081BB42 /* Foundation.framework */; };
+		A2513E6315A8D8940081BB42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2513E6215A8D8940081BB42 /* CoreGraphics.framework */; };
+		A2513E6915A8D8940081BB42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2513E6715A8D8940081BB42 /* InfoPlist.strings */; };
+		A2513E6B15A8D8940081BB42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2513E6A15A8D8940081BB42 /* main.m */; };
+		A2513E6F15A8D8940081BB42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2513E6E15A8D8940081BB42 /* AppDelegate.m */; };
+		A2513E7215A8D8940081BB42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2513E7115A8D8940081BB42 /* ViewController.m */; };
+		A2513E7515A8D8940081BB42 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2513E7315A8D8940081BB42 /* ViewController.xib */; };
+		A2513E7D15A8D8950081BB42 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2513E7C15A8D8950081BB42 /* SenTestingKit.framework */; };
+		A2513E7E15A8D8950081BB42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2513E5E15A8D8940081BB42 /* UIKit.framework */; };
+		A2513E7F15A8D8950081BB42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2513E6015A8D8940081BB42 /* Foundation.framework */; };
+		A2513E8715A8D8950081BB42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2513E8515A8D8950081BB42 /* InfoPlist.strings */; };
+		A2513E8A15A8D8950081BB42 /* WunderTabelleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2513E8915A8D8950081BB42 /* WunderTabelleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2513E8015A8D8950081BB42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2513E5115A8D8940081BB42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2513E5915A8D8940081BB42;
+			remoteInfo = WunderTabelle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2513E5A15A8D8940081BB42 /* WunderTabelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WunderTabelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2513E5E15A8D8940081BB42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2513E6015A8D8940081BB42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2513E6215A8D8940081BB42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A2513E6615A8D8940081BB42 /* WunderTabelle-Info.plist */ = {isa = PBXFileReference; path = "WunderTabelle-Info.plist"; sourceTree = "<group>"; };
+		A2513E6815A8D8940081BB42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A2513E6A15A8D8940081BB42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2513E6C15A8D8940081BB42 /* WunderTabelle-Prefix.pch */ = {isa = PBXFileReference; path = "WunderTabelle-Prefix.pch"; sourceTree = "<group>"; };
+		A2513E6D15A8D8940081BB42 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2513E6E15A8D8940081BB42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2513E7015A8D8940081BB42 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		A2513E7115A8D8940081BB42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A2513E7415A8D8940081BB42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		A2513E7B15A8D8950081BB42 /* WunderTabelleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WunderTabelleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2513E7C15A8D8950081BB42 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A2513E8415A8D8950081BB42 /* WunderTabelleTests-Info.plist */ = {isa = PBXFileReference; path = "WunderTabelleTests-Info.plist"; sourceTree = "<group>"; };
+		A2513E8615A8D8950081BB42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A2513E8815A8D8950081BB42 /* WunderTabelleTests.h */ = {isa = PBXFileReference; path = WunderTabelleTests.h; sourceTree = "<group>"; };
+		A2513E8915A8D8950081BB42 /* WunderTabelleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WunderTabelleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2513E5715A8D8940081BB42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2513E5F15A8D8940081BB42 /* UIKit.framework in Frameworks */,
+				A2513E6115A8D8940081BB42 /* Foundation.framework in Frameworks */,
+				A2513E6315A8D8940081BB42 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2513E7715A8D8950081BB42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2513E7D15A8D8950081BB42 /* SenTestingKit.framework in Frameworks */,
+				A2513E7E15A8D8950081BB42 /* UIKit.framework in Frameworks */,
+				A2513E7F15A8D8950081BB42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2513E4F15A8D8940081BB42 = {
+			isa = PBXGroup;
+			children = (
+				A2513E6415A8D8940081BB42 /* WunderTabelle */,
+				A2513E8215A8D8950081BB42 /* WunderTabelleTests */,
+				A2513E5D15A8D8940081BB42 /* Frameworks */,
+				A2513E5B15A8D8940081BB42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2513E5B15A8D8940081BB42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2513E5A15A8D8940081BB42 /* WunderTabelle.app */,
+				A2513E7B15A8D8950081BB42 /* WunderTabelleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2513E5D15A8D8940081BB42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2513E5E15A8D8940081BB42 /* UIKit.framework */,
+				A2513E6015A8D8940081BB42 /* Foundation.framework */,
+				A2513E6215A8D8940081BB42 /* CoreGraphics.framework */,
+				A2513E7C15A8D8950081BB42 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2513E6415A8D8940081BB42 /* WunderTabelle */ = {
+			isa = PBXGroup;
+			children = (
+				A2513E6D15A8D8940081BB42 /* AppDelegate.h */,
+				A2513E6E15A8D8940081BB42 /* AppDelegate.m */,
+				A2513E7015A8D8940081BB42 /* ViewController.h */,
+				A2513E7115A8D8940081BB42 /* ViewController.m */,
+				A2513E7315A8D8940081BB42 /* ViewController.xib */,
+				A2513E6515A8D8940081BB42 /* Supporting Files */,
+			);
+			path = WunderTabelle;
+			sourceTree = "<group>";
+		};
+		A2513E6515A8D8940081BB42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2513E6615A8D8940081BB42 /* WunderTabelle-Info.plist */,
+				A2513E6715A8D8940081BB42 /* InfoPlist.strings */,
+				A2513E6A15A8D8940081BB42 /* main.m */,
+				A2513E6C15A8D8940081BB42 /* WunderTabelle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2513E8215A8D8950081BB42 /* WunderTabelleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2513E8815A8D8950081BB42 /* WunderTabelleTests.h */,
+				A2513E8915A8D8950081BB42 /* WunderTabelleTests.m */,
+				A2513E8315A8D8950081BB42 /* Supporting Files */,
+			);
+			path = WunderTabelleTests;
+			sourceTree = "<group>";
+		};
+		A2513E8315A8D8950081BB42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2513E8415A8D8950081BB42 /* WunderTabelleTests-Info.plist */,
+				A2513E8515A8D8950081BB42 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2513E5915A8D8940081BB42 /* WunderTabelle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2513E8D15A8D8950081BB42 /* Build configuration list for PBXNativeTarget "WunderTabelle" */;
+			buildPhases = (
+				A2513E5615A8D8940081BB42 /* Sources */,
+				A2513E5715A8D8940081BB42 /* Frameworks */,
+				A2513E5815A8D8940081BB42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WunderTabelle;
+			productName = WunderTabelle;
+			productReference = A2513E5A15A8D8940081BB42 /* WunderTabelle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2513E7A15A8D8950081BB42 /* WunderTabelleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2513E9015A8D8950081BB42 /* Build configuration list for PBXNativeTarget "WunderTabelleTests" */;
+			buildPhases = (
+				A2513E7615A8D8950081BB42 /* Sources */,
+				A2513E7715A8D8950081BB42 /* Frameworks */,
+				A2513E7815A8D8950081BB42 /* Resources */,
+				A2513E7915A8D8950081BB42 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2513E8115A8D8950081BB42 /* PBXTargetDependency */,
+			);
+			name = WunderTabelleTests;
+			productName = WunderTabelleTests;
+			productReference = A2513E7B15A8D8950081BB42 /* WunderTabelleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2513E5115A8D8940081BB42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A2513E5415A8D8940081BB42 /* Build configuration list for PBXProject "WunderTabelle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A2513E4F15A8D8940081BB42;
+			productRefGroup = A2513E5B15A8D8940081BB42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2513E5915A8D8940081BB42 /* WunderTabelle */,
+				A2513E7A15A8D8950081BB42 /* WunderTabelleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2513E5815A8D8940081BB42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2513E6915A8D8940081BB42 /* InfoPlist.strings in Resources */,
+				A2513E7515A8D8940081BB42 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2513E7815A8D8950081BB42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2513E8715A8D8950081BB42 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2513E7915A8D8950081BB42 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2513E5615A8D8940081BB42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2513E6B15A8D8940081BB42 /* main.m in Sources */,
+				A2513E6F15A8D8940081BB42 /* AppDelegate.m in Sources */,
+				A2513E7215A8D8940081BB42 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2513E7615A8D8950081BB42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2513E8A15A8D8950081BB42 /* WunderTabelleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2513E8115A8D8950081BB42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2513E5915A8D8940081BB42 /* WunderTabelle */;
+			targetProxy = A2513E8015A8D8950081BB42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2513E6715A8D8940081BB42 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2513E6815A8D8940081BB42 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A2513E7315A8D8940081BB42 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2513E7415A8D8940081BB42 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		A2513E8515A8D8950081BB42 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2513E8615A8D8950081BB42 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2513E8B15A8D8950081BB42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2513E8C15A8D8950081BB42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2513E8E15A8D8950081BB42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WunderTabelle/WunderTabelle-Prefix.pch";
+				INFOPLIST_FILE = "WunderTabelle/WunderTabelle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A2513E8F15A8D8950081BB42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WunderTabelle/WunderTabelle-Prefix.pch";
+				INFOPLIST_FILE = "WunderTabelle/WunderTabelle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A2513E9115A8D8950081BB42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WunderTabelle.app/WunderTabelle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WunderTabelle/WunderTabelle-Prefix.pch";
+				INFOPLIST_FILE = "WunderTabelleTests/WunderTabelleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A2513E9215A8D8950081BB42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WunderTabelle.app/WunderTabelle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WunderTabelle/WunderTabelle-Prefix.pch";
+				INFOPLIST_FILE = "WunderTabelleTests/WunderTabelleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2513E5415A8D8940081BB42 /* Build configuration list for PBXProject "WunderTabelle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2513E8B15A8D8950081BB42 /* Debug */,
+				A2513E8C15A8D8950081BB42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2513E8D15A8D8950081BB42 /* Build configuration list for PBXNativeTarget "WunderTabelle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2513E8E15A8D8950081BB42 /* Debug */,
+				A2513E8F15A8D8950081BB42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A2513E9015A8D8950081BB42 /* Build configuration list for PBXNativeTarget "WunderTabelleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2513E9115A8D8950081BB42 /* Debug */,
+				A2513E9215A8D8950081BB42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2513E5115A8D8940081BB42 /* Project object */;
+}
