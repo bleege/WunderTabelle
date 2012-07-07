@@ -20,6 +20,9 @@
 		A2513E7F15A8D8950081BB42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2513E6015A8D8940081BB42 /* Foundation.framework */; };
 		A2513E8715A8D8950081BB42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2513E8515A8D8950081BB42 /* InfoPlist.strings */; };
 		A2513E8A15A8D8950081BB42 /* WunderTabelleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2513E8915A8D8950081BB42 /* WunderTabelleTests.m */; };
+		A2513E9415A8DC120081BB42 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2513E9315A8DC120081BB42 /* CoreData.framework */; };
+		A2513E9715A8DC950081BB42 /* WunderTabelleDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2513E9515A8DC950081BB42 /* WunderTabelleDataModel.xcdatamodeld */; };
+		A2513E9A15A8DD7F0081BB42 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A2513E9915A8DD7F0081BB42 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +40,25 @@
 		A2513E5E15A8D8940081BB42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A2513E6015A8D8940081BB42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2513E6215A8D8940081BB42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A2513E6615A8D8940081BB42 /* WunderTabelle-Info.plist */ = {isa = PBXFileReference; path = "WunderTabelle-Info.plist"; sourceTree = "<group>"; };
+		A2513E6615A8D8940081BB42 /* WunderTabelle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WunderTabelle-Info.plist"; sourceTree = "<group>"; };
 		A2513E6815A8D8940081BB42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A2513E6A15A8D8940081BB42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A2513E6C15A8D8940081BB42 /* WunderTabelle-Prefix.pch */ = {isa = PBXFileReference; path = "WunderTabelle-Prefix.pch"; sourceTree = "<group>"; };
-		A2513E6D15A8D8940081BB42 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2513E6C15A8D8940081BB42 /* WunderTabelle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WunderTabelle-Prefix.pch"; sourceTree = "<group>"; };
+		A2513E6D15A8D8940081BB42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2513E6E15A8D8940081BB42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A2513E7015A8D8940081BB42 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		A2513E7015A8D8940081BB42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A2513E7115A8D8940081BB42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A2513E7415A8D8940081BB42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		A2513E7B15A8D8950081BB42 /* WunderTabelleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WunderTabelleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2513E7C15A8D8950081BB42 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		A2513E8415A8D8950081BB42 /* WunderTabelleTests-Info.plist */ = {isa = PBXFileReference; path = "WunderTabelleTests-Info.plist"; sourceTree = "<group>"; };
+		A2513E8415A8D8950081BB42 /* WunderTabelleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WunderTabelleTests-Info.plist"; sourceTree = "<group>"; };
 		A2513E8615A8D8950081BB42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A2513E8815A8D8950081BB42 /* WunderTabelleTests.h */ = {isa = PBXFileReference; path = WunderTabelleTests.h; sourceTree = "<group>"; };
+		A2513E8815A8D8950081BB42 /* WunderTabelleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WunderTabelleTests.h; sourceTree = "<group>"; };
 		A2513E8915A8D8950081BB42 /* WunderTabelleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WunderTabelleTests.m; sourceTree = "<group>"; };
+		A2513E9315A8DC120081BB42 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A2513E9615A8DC950081BB42 /* WunderTabelleDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WunderTabelleDataModel.xcdatamodel; sourceTree = "<group>"; };
+		A2513E9815A8DD7F0081BB42 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Data/Player.h; sourceTree = "<group>"; };
+		A2513E9915A8DD7F0081BB42 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Data/Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2513E9415A8DC120081BB42 /* CoreData.framework in Frameworks */,
 				A2513E5F15A8D8940081BB42 /* UIKit.framework in Frameworks */,
 				A2513E6115A8D8940081BB42 /* Foundation.framework in Frameworks */,
 				A2513E6315A8D8940081BB42 /* CoreGraphics.framework in Frameworks */,
@@ -100,10 +108,11 @@
 		A2513E5D15A8D8940081BB42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A2513E5E15A8D8940081BB42 /* UIKit.framework */,
-				A2513E6015A8D8940081BB42 /* Foundation.framework */,
+				A2513E9315A8DC120081BB42 /* CoreData.framework */,
 				A2513E6215A8D8940081BB42 /* CoreGraphics.framework */,
+				A2513E6015A8D8940081BB42 /* Foundation.framework */,
 				A2513E7C15A8D8950081BB42 /* SenTestingKit.framework */,
+				A2513E5E15A8D8940081BB42 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +120,7 @@
 		A2513E6415A8D8940081BB42 /* WunderTabelle */ = {
 			isa = PBXGroup;
 			children = (
+				A2513E9B15A8DD940081BB42 /* Data */,
 				A2513E6D15A8D8940081BB42 /* AppDelegate.h */,
 				A2513E6E15A8D8940081BB42 /* AppDelegate.m */,
 				A2513E7015A8D8940081BB42 /* ViewController.h */,
@@ -128,6 +138,7 @@
 				A2513E6715A8D8940081BB42 /* InfoPlist.strings */,
 				A2513E6A15A8D8940081BB42 /* main.m */,
 				A2513E6C15A8D8940081BB42 /* WunderTabelle-Prefix.pch */,
+				A2513E9515A8DC950081BB42 /* WunderTabelleDataModel.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -149,6 +160,15 @@
 				A2513E8515A8D8950081BB42 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2513E9B15A8DD940081BB42 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A2513E9815A8DD7F0081BB42 /* Player.h */,
+				A2513E9915A8DD7F0081BB42 /* Player.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +280,8 @@
 				A2513E6B15A8D8940081BB42 /* main.m in Sources */,
 				A2513E6F15A8D8940081BB42 /* AppDelegate.m in Sources */,
 				A2513E7215A8D8940081BB42 /* ViewController.m in Sources */,
+				A2513E9715A8DC950081BB42 /* WunderTabelleDataModel.xcdatamodeld in Sources */,
+				A2513E9A15A8DD7F0081BB42 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +461,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2513E9515A8DC950081BB42 /* WunderTabelleDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2513E9615A8DC950081BB42 /* WunderTabelleDataModel.xcdatamodel */,
+			);
+			currentVersion = A2513E9615A8DC950081BB42 /* WunderTabelleDataModel.xcdatamodel */;
+			path = WunderTabelleDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A2513E5115A8D8940081BB42 /* Project object */;
 }
