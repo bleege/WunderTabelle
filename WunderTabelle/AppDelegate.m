@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
 #import "ViewController.h"
+#import "Player.h"
 
 @implementation AppDelegate
 
@@ -22,7 +22,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     // Override point for customization after application launch.
+    [self setupDatabase];
+    
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
@@ -54,6 +57,44 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void) setupDatabase
+{
+    NSManagedObjectContext *context = self.managedObjectContext;
+    
+    // Test listing all FailedBankInfos from the store
+    NSError *error;
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Player" inManagedObjectContext:context];
+    
+    [fetchRequest setEntity:entity];
+    NSArray *players = [context executeFetchRequest:fetchRequest error:&error];
+    if ([players count] == 23)
+    {
+        NSLog(@"Player roster database previously loaded, so the app is ready to go!");
+        return;
+    }
+    else
+    {
+        NSLog(@"Loading roster into database.");
+        
+        NSString *dataPath = [[NSBundle mainBundle] pathForResource:@"rosterdata" ofType:@"json"];
+        NSArray *players = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:dataPath] options:kNilOptions error:&error];
+
+        for (Player *jp in players)
+        {
+            Player *p = [NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:context];
+            p = jp.copy;
+        }
+        
+        if (![context save:&error])
+        {
+            NSLog(@"Error saving player data: '%@'", [error localizedDescription]);
+            abort();
+        }
+    }
+    NSLog(@"setupDatabase() complete.");
 }
 
 /**

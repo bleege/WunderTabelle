@@ -1,0 +1,28 @@
+[
+ {"playerId": 1, "firstName": "Manuel", "lastName": "Neuer", "club": "Bayern Munich", "position": "Goalkeeper", "kitNumber": 1},
+ {"playerId": 2, "firstName": "Tim", "lastName": "Wiese", "club": "Werder Bremen", "position": "Goalkeeper", "kitNumber": 12},
+ {"playerId": 3, "firstName": "Ron-Robert", "lastName": "Zieler", "club": "Hannover 96", "position": "Goalkeeper", "kitNumber": 22},
+ {"playerId": 4, "firstName": "Holger", "lastName": "Badstuber", "club": "Bayern Munich", "position": "Defender", "kitNumber": 14},
+ {"playerId": 5, "firstName": "Jerome", "lastName": "Boateng", "club": "Bayern Munich", "position": "Defender", "kitNumber": 20},
+ {"playerId": 6, "firstName": "Benedikt", "lastName": "Höwedes", "club": "Schalke 04", "position": "Defender", "kitNumber": 4},
+ {"playerId": 7, "firstName": "Mats", "lastName": "Hummels", "club": "Borussia Dortmund", "position": "Defender", "kitNumber": 5},
+ 
+ {"playerId": 8, "firstName": "Philipp", "lastName": "Lahm", "club": "Bayern Munich", "position": "Defender", "kitNumber": 16},
+ {"playerId": 9, "firstName": "Per", "lastName": "Mertesacker", "club": "Arsenal", "position": "Defender", "kitNumber": 17},
+ {"playerId": 10, "firstName": "Marcel", "lastName": "Schmelzer", "club": "Borussia Dortmund", "position": "Defender", "kitNumber": 3},
+ {"playerId": 11, "firstName": "Lars", "lastName": "Bender", "club": "OFC Kickers 1901", "position": "Midfielder", "kitNumber": 15},
+ {"playerId": 12, "firstName": "Mario", "lastName": "Götze", "club": "Borussia Dortmund", "position": "Midfielder", "kitNumber": 19},
+ {"playerId": 13, "firstName": "Ilkay", "lastName": "Gündogan", "club": "Borussia Dortmund", "position": "Midfielder", "kitNumber": 2},
+ {"playerId": 14, "firstName": "Sami", "lastName": "Khedira", "club": "Real Madrid", "position": "Midfielder", "kitNumber": 6},
+
+ {"playerId": 15, "firstName": "Toni", "lastName": "Kroos", "club": "Bayern Munich", "position": "Midfielder", "kitNumber": 18},
+ {"playerId": 16, "firstName": "Thomas", "lastName": "Müller", "club": "Bayern Munich", "position": "Midfielder", "kitNumber": 13},
+ {"playerId": 17, "firstName": "Mesut", "lastName": "Özil", "club": "Real Madrid", "position": "Midfielder", "kitNumber": 8},
+ {"playerId": 18, "firstName": "Marco", "lastName": "Reus", "club": "Borussia Monchengladbach", "position": "Midfielder", "kitNumber": 21},
+ {"playerId": 19, "firstName": "Andre", "lastName": "Schürrle", "club": "Bayer Leverkusen", "position": "Forward", "kitNumber": 9},
+ {"playerId": 20, "firstName": "Bastian", "lastName": "Schweinsteiger", "club": "Bayern Munich", "position": "Midfielder", "kitNumber": 7},
+ {"playerId": 21, "firstName": "Mario", "lastName": "Gomez", "club": "Bayern Munich", "position": "Forward", "kitNumber": 23},
+
+ {"playerId": 22, "firstName": "Miroslav", "lastName": "Klose", "club": "Lazio", "position": "Forward", "kitNumber": 11},
+ {"playerId": 23, "firstName": "Lukas", "lastName": "Podolski", "club": "FC Cologne", "position": "Forward", "kitNumber": 10}
+]
