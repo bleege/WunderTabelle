@@ -79,13 +79,31 @@
     {
         NSLog(@"Loading roster into database.");
         
+        // Delete Previous Database
+        NSArray *stores = [self.persistentStoreCoordinator persistentStores];
+        for (NSPersistentStore *store in stores)
+        {
+            [self.persistentStoreCoordinator removePersistentStore:store error:nil];
+            [[NSFileManager defaultManager] removeItemAtPath:store.URL.path error:nil];
+        }
+        _managedObjectContext = nil;
+        _managedObjectModel = nil;
+        _persistentStoreCoordinator = nil;
+        
+        context = self.managedObjectContext;
+        
         NSString *dataPath = [[NSBundle mainBundle] pathForResource:@"rosterdata" ofType:@"json"];
         NSArray *players = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:dataPath] options:kNilOptions error:&error];
-
+        
         for (Player *jp in players)
         {
             Player *p = [NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:context];
-            p = jp.copy;
+            p.playerId = [jp valueForKey:@"playerId"];
+            p.firstName = [jp valueForKey:@"firstName"];
+            p.lastName = [jp valueForKey:@"lastName"];
+            p.club = [jp valueForKey:@"club"];
+            p.position = [jp valueForKey:@"position"];
+            p.kitNumber = [jp valueForKey:@"kitNumber"];
         }
         
         if (![context save:&error])
