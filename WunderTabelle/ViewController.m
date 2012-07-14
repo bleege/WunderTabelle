@@ -23,6 +23,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    tableView.rowHeight = 100;
+    tableView.backgroundColor = [UIColor clearColor];
+    
+    UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 60)];
+    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 20, 300, 40)];
+    headerLabel.text = @"Die Nationalmannschaft";
+    headerLabel.textColor = [UIColor whiteColor];
+    headerLabel.shadowColor = [UIColor blackColor];
+    headerLabel.shadowOffset = CGSizeMake(0, 1);
+    headerLabel.font = [UIFont boldSystemFontOfSize:22];
+    headerLabel.backgroundColor = [UIColor clearColor];
+    containerView.backgroundColor = [UIColor colorWithRed:0.8980 green:0.7373 blue:0.1961 alpha:1.0000];
+    [containerView addSubview:headerLabel];
+    tableView.tableHeaderView = containerView;
+    
     tableData = [[NSMutableArray alloc] init];
     [self loadPlayerData];
 }
