@@ -12,6 +12,7 @@
 
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 @property (nonatomic, retain) NSMutableArray *tableData;
+@property (nonatomic, retain) IBOutlet UITableViewCell *tvCell;
 
 - (void) loadPlayerData;
 

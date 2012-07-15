@@ -18,6 +18,7 @@
 
 @synthesize tableView;
 @synthesize tableData;
+@synthesize tvCell;
 
 - (void)viewDidLoad
 {
@@ -100,19 +101,30 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *cellIdentifier = @"PlayerTableCellIdentifier";
     
-    UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil)
-	{
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    {
+        [[NSBundle mainBundle] loadNibNamed:@"PlayerTableCell" owner:self options:nil];
+        cell = tvCell;
+        self.tvCell = nil;
     }
     
 	// Configure the cell...
 	Player *p = (Player *)[tableData objectAtIndex:indexPath.row];
-    NSString *label = [@"" stringByAppendingFormat:@"%@ %@", p.firstName, p.lastName];
-	cell.textLabel.text = label;
+    UILabel *label;
+    label = (UILabel *)[cell viewWithTag:1];
+    label.text = [p.kitNumber stringValue];
+    
+    label = (UILabel *)[cell viewWithTag:2];
+    label.text = [p.firstName stringByAppendingFormat:@" %@", p.lastName];
+
+    label = (UILabel *)[cell viewWithTag:3];
+    label.text = p.club;
+
+    label = (UILabel *)[cell viewWithTag:4];
+    label.text = [p.position substringToIndex:1];
     
     return cell;
 }

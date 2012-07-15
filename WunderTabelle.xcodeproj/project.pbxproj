@@ -23,6 +23,7 @@
 		A2513E9415A8DC120081BB42 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2513E9315A8DC120081BB42 /* CoreData.framework */; };
 		A2513E9715A8DC950081BB42 /* WunderTabelleDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2513E9515A8DC950081BB42 /* WunderTabelleDataModel.xcdatamodeld */; };
 		A2513E9A15A8DD7F0081BB42 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A2513E9915A8DD7F0081BB42 /* Player.m */; };
+		A25E8ACF15B3264300BEB135 /* PlayerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25E8AD115B3264300BEB135 /* PlayerTableCell.xib */; };
 		A2B1A5A915A91163004ADD9F /* rosterdata.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B1A5A815A91163004ADD9F /* rosterdata.json */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		A2513E9615A8DC950081BB42 /* WunderTabelleDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WunderTabelleDataModel.xcdatamodel; sourceTree = "<group>"; };
 		A2513E9815A8DD7F0081BB42 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Data/Player.h; sourceTree = "<group>"; };
 		A2513E9915A8DD7F0081BB42 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Data/Player.m; sourceTree = "<group>"; };
+		A25E8AD015B3264300BEB135 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PlayerTableCell.xib; sourceTree = "<group>"; };
 		A2B1A5A815A91163004ADD9F /* rosterdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rosterdata.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				A2513E7015A8D8940081BB42 /* ViewController.h */,
 				A2513E7115A8D8940081BB42 /* ViewController.m */,
 				A2513E7315A8D8940081BB42 /* ViewController.xib */,
+				A25E8AD115B3264300BEB135 /* PlayerTableCell.xib */,
 				A2513E6515A8D8940081BB42 /* Supporting Files */,
 			);
 			path = WunderTabelle;
@@ -247,6 +250,7 @@
 				A2513E6915A8D8940081BB42 /* InfoPlist.strings in Resources */,
 				A2513E7515A8D8940081BB42 /* ViewController.xib in Resources */,
 				A2B1A5A915A91163004ADD9F /* rosterdata.json in Resources */,
+				A25E8ACF15B3264300BEB135 /* PlayerTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +334,14 @@
 				A2513E8615A8D8950081BB42 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A25E8AD115B3264300BEB135 /* PlayerTableCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A25E8AD015B3264300BEB135 /* en */,
+			);
+			name = PlayerTableCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
