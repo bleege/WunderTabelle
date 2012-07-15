@@ -27,7 +27,7 @@
     
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.rowHeight = 100;
-    tableView.backgroundColor = [UIColor clearColor];
+//    tableView.backgroundColor = [UIColor clearColor];
     
     UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 60)];
     UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 20, 300, 40)];
@@ -109,6 +109,11 @@
         [[NSBundle mainBundle] loadNibNamed:@"PlayerTableCell" owner:self options:nil];
         cell = tvCell;
         self.tvCell = nil;
+        
+        // Load Image
+//        UIImageView *iv = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tablecell.png"]];
+//        [cell.contentView addSubview: iv];
+//        [cell.contentView sendSubviewToBack:iv];
     }
     
 	// Configure the cell...
