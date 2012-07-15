@@ -25,6 +25,7 @@
 		A2513E9A15A8DD7F0081BB42 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A2513E9915A8DD7F0081BB42 /* Player.m */; };
 		A25E8ACF15B3264300BEB135 /* PlayerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25E8AD115B3264300BEB135 /* PlayerTableCell.xib */; };
 		A25E8AD315B327FC00BEB135 /* tablecell.png in Resources */ = {isa = PBXBuildFile; fileRef = A25E8AD215B327FC00BEB135 /* tablecell.png */; };
+		A25E8AD515B343D900BEB135 /* tablecell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A25E8AD415B343D900BEB135 /* tablecell@2x.png */; };
 		A2B1A5A915A91163004ADD9F /* rosterdata.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B1A5A815A91163004ADD9F /* rosterdata.json */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		A2513E9915A8DD7F0081BB42 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Data/Player.m; sourceTree = "<group>"; };
 		A25E8AD015B3264300BEB135 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PlayerTableCell.xib; sourceTree = "<group>"; };
 		A25E8AD215B327FC00BEB135 /* tablecell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tablecell.png; sourceTree = "<group>"; };
+		A25E8AD415B343D900BEB135 /* tablecell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tablecell@2x.png"; sourceTree = "<group>"; };
 		A2B1A5A815A91163004ADD9F /* rosterdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rosterdata.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				A25E8AD215B327FC00BEB135 /* tablecell.png */,
+				A25E8AD415B343D900BEB135 /* tablecell@2x.png */,
 				A2513E6615A8D8940081BB42 /* WunderTabelle-Info.plist */,
 				A2513E6715A8D8940081BB42 /* InfoPlist.strings */,
 				A2513E6A15A8D8940081BB42 /* main.m */,
@@ -255,6 +258,7 @@
 				A2B1A5A915A91163004ADD9F /* rosterdata.json in Resources */,
 				A25E8ACF15B3264300BEB135 /* PlayerTableCell.xib in Resources */,
 				A25E8AD315B327FC00BEB135 /* tablecell.png in Resources */,
+				A25E8AD515B343D900BEB135 /* tablecell@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
